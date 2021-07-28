@@ -1,0 +1,59 @@
+.style-edit-bar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+.style-edit-bar input[type="color"]{
+    margin:0;
+    padding:0;
+    opacity: 0;
+    width:0.1px
+}
+.style-edit-bar input[type="list"]{
+    outline: none;
+    font-size: 12px;
+    width: 4rem;
+    border:none;
+}
+.style-edit-bar input[type="list"],
+.style-edit-bar label
+{
+   margin-inline-end: 1.5em;
+}
+.style-edit-bar svg{
+    width:1rem;
+    cursor:pointer
+}
+
+
+.style-edit-bar svg:hover path {
+    fill: black;
+    opacity: 1;
+}
+
+.style-edit-bar button{
+    margin-inline-end: 1.5rem;
+    width:1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.style-edit-bar .plus-btn{
+    background-image: url('../../img/icons/icon-plus.svg') ;
+    background-size: 1rem;
+}
+.style-edit-bar button:last-child{
+    background-image: url('../../img/icons/icon-minus.svg');
+}
+.style-edit-bar button{
+background-repeat: no-repeat;
+background-position: center;
+background-size: 1rem;
+}
+
+
+.style-edit-bar svg path {
+     fill: #202124;
+     opacity: .71;
+    transition: .2s;
+}

@@ -1,0 +1,29 @@
+.todo-marked{
+    text-decoration: line-through;
+}
+.todo-preview{
+    text-align: left;
+    display: flex;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.todo-preview input[type="checkbox"]{
+    cursor: pointer;
+}
+.todo-preview:hover button{
+    opacity: 1;
+}
+.todo-preview span{
+    flex-grow: 1;
+    align-self: center;
+    font-size: inherit;
+}
+.todo-preview button{
+background-color: rgb(221, 216, 216);
+border: none;
+cursor:pointer;
+opacity: 0;
+transition: .125s;
+border-radius: 50%;
+padding: 4px 5px;
+}

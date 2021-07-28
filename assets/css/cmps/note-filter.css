@@ -1,0 +1,25 @@
+.note-filter{
+    margin-bottom: 0.7rem;
+
+
+}
+.note-filter input[type="text"]{
+    padding: 8px 10px;
+flex-grow: 1;
+    outline: none;
+   border:none;
+}
+.note-filter svg{
+    max-height:1rem;
+    align-self: center;
+    margin-inline-end: 0.5rem;
+}
+.note-filter svg path{
+    fill:   rgb(0, 118, 253);
+}
+.note-filter .input-container{
+    max-width: 22rem;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid rgb(206, 202, 202);
+}

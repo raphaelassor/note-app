@@ -1,0 +1,16 @@
+.keep-app {
+  max-width: 1040px;
+  margin:0px auto;
+  display: block;
+  color: black;
+}
+.pinned-notes-section{
+  border-bottom :2px solid rgb(0, 118, 253); ;
+  padding-bottom: 2rem;
+  margin: 0.5rem  0 1rem;
+  
+}
+.pinned-notes-section h3 svg{
+  width:0.75rem;
+  transform: rotate(30deg);
+}

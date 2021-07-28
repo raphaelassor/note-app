@@ -1,0 +1,110 @@
+.note-add-container{
+    margin: 0px auto;
+    max-width: 60%;
+    display: flex;
+    font-size: .875rem;
+    padding: 12px 16px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius: 8px;
+    border: 1px solid rgb(226, 223, 223);
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.note-add-container.expanded-input {
+    flex-direction: column;
+    z-index: 20;
+}
+.note-add-input {
+    flex-grow: 1;
+    margin: 0px;
+    height: .875rem;
+}
+
+.note-add-container input[type="radio"] {
+    display: none;
+}
+
+.note-add-container label>input[type="radio"]:checked+svg path {
+    fill: black;
+}
+
+.note-add-container label {
+    align-self: center;
+    margin-inline-end: 0.5rem;
+}
+
+.note-add-container label:hover {
+    cursor: pointer;
+}
+
+.note-add-container svg {
+    height: 20px;
+}
+
+.note-add-container label:hover path {
+    fill: black;
+}
+
+.note-add-container svg path {
+    fill: rgb(189 189 189);
+    transition: .2s;
+}
+
+.note-add-container button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+.input-add-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.input-add-btns button{
+    font-size: 0.9rem;
+}
+.input-add-btns button{
+    padding: 6px 8px;
+    transition: .2s;
+    border-radius: 4px;
+}
+.input-add-btns button:first-child:hover{
+    background-color: rgb(223, 221, 221);
+}
+.input-add-btns button:last-child{
+    background-color: rgb(0, 118, 253);
+    color: white;
+}
+
+
+/* EXPANDED INPUT */
+.expanded-input .input-add-labels {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-self: center;
+}
+
+.expanded-input .note-add-input {
+    min-height: 5rem;
+    width: 100%;
+}
+
+
+.expanded-input .note-add-input-title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.expanded-input .note-add-input-title, .note-add-input {
+    border: none;
+    padding: 0;
+    outline: none;
+}

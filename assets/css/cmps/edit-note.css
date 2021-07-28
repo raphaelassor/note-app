@@ -1,0 +1,101 @@
+.edit-note {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:  0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    border-radius:8px;
+    z-index: 10;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 8px;
+}
+
+.edit-note>input[type="text"]{
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+   
+}
+.edit-note input[type="text"] , .edit-note textarea{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+}
+.edit-note textarea{
+    min-height:5rem;
+   
+    width:90%;
+    margin-bottom:0.5rem ;
+    padding: 0;
+
+}
+.edit-note textarea { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.edit-note .edit-content {
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content:center
+    
+}
+.edit-content{
+    flex-direction: column;
+    align-items: center;
+}
+.edit-note img {
+    max-width: 80%
+}
+
+.edit-note .edit-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-note .edit-btns svg {
+    width:1.25rem;
+}
+.edit-note .icon-palette{
+    margin-inline-end: 1.5rem;
+}
+.edit-note .edit-btns button{
+    margin-inline-end: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.edit-note svg:hover path {
+    fill: black;
+    opacity: 1;
+}
+
+.edit-note svg path {
+     fill: #202124;
+     opacity: .71;
+    transition: .2s;
+}
+
+.edit-note  .action-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.25rem
+}
+.edit-note .action-btns button{
+    padding: 6px 8px;
+    transition: .2s;
+    border-radius: 4px;
+    border: none;
+}
+.edit-note .action-btns button:first-child:hover{
+    background-color: rgb(223, 221, 221);
+}
+.edit-note .action-btns button:last-child{
+    background-color: rgb(0, 118, 253);
+    color: white;
+}

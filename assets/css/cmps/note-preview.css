@@ -1,0 +1,77 @@
+.note-preview{
+    border: 1px solid rgb(212, 212, 212); 
+    margin-inline-end: 0.5rem;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    break-inside: avoid;
+    margin-bottom:0.5rem ;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: block;
+
+}
+.note-pinned-section .notes-container .note-preview{
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.note-preview-header{
+    display: flex;
+}
+.note-preview h3{
+    margin: 0;
+    padding:0.5rem 0;
+    text-align: center;
+    flex-grow:1;
+}
+.note-preview:hover{
+   box-shadow:  0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+ 
+}
+input[type="color"]{
+    opacity: 0;
+}
+.note-preview img,
+.note-preview iframe{
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+.note-preview iframe{
+    border: none;
+    border-radius: 4px;
+}
+
+.note-preview svg{
+    height:1.2rem;
+    cursor: pointer;
+}
+.note-preview path{
+    fill: #202124;
+    opacity: .71;
+}
+.note-todo,.note-text,.note-img,.note-video{
+    padding: 0.75rem 1rem;
+}
+.note-preview-buttons{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.note-preview-buttons,.note-preview .pin-btn{
+    opacity: 0;
+    transition: .3s;
+
+}
+.note-preview button{
+    padding: 0;
+    background-color: transparent;
+    border:none
+}
+
+.note-preview:hover .note-preview-buttons,.note-preview:hover .pin-btn{
+    opacity: 1;
+}
+
+.note-preview .note-map+.note-preview-buttons{
+    z-index: 999;
+}

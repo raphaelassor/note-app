@@ -1,0 +1,7 @@
+.note-todo input[type="text"]{
+    border:none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    transition: .3s;
+}

@@ -1,0 +1,7 @@
+.keep-app a{
+    color: black;
+    text-decoration: none;
+}
+.keep-app a:visited{
+    color: black;
+}

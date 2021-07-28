@@ -1,0 +1,9 @@
+
+.map{
+    width: 100%;
+    height: 300px;
+}
+
+.map .gm-style iframe{
+    display: block;
+}
